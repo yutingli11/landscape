@@ -91,7 +91,7 @@ section .section-title {
   }
 
 
-#footer h5, #footer h3{
+#footer h5, #footer h3, #footer h6{
 	padding-left: 10px;
     padding-bottom: 6px;
     margin-bottom: 20px;

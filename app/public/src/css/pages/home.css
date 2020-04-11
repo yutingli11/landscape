@@ -1,8 +1,70 @@
-.carousel-item {
+/* .carousel-item {
 
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+  } */
+
+.aligncenter {
+    display: block;
+    margin: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+#route {
+    /* text-align: center;
+    color: white;
+    background-image: url("https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-1-539x400.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover; */
+
+
+/* The image used */
+background-image: url("https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-1-539x400.jpg");
+
+/* Full height */
+height: 100%; 
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
   }
+
+  img.card-img-top {
+    width: 100%; /* You can set the dimensions to whatever you want */
+    height: 200px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: auto; position:relative; }
+    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
+        .MultiCarousel .MultiCarousel-inner .item { float: left;}
+        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
+    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
+    .MultiCarousel .leftLst { left:0; }
+    .MultiCarousel .rightLst { right:0; }
+    
+        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
