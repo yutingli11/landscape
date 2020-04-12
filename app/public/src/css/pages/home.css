@@ -21,6 +21,12 @@ img {
     vertical-align: bottom;
 }
 
+img.card-img-top {
+    width: 100%; /* You can set the dimensions to whatever you want */
+    height: 200px;
+    object-fit: cover;
+}
+
 #route {
     /* text-align: center;
     color: white;
@@ -45,11 +51,6 @@ background-size: cover;
 
   }
 
-  img.card-img-top {
-    width: 100%; /* You can set the dimensions to whatever you want */
-    height: 200px;
-    object-fit: cover;
-}
 
 
 
@@ -59,12 +60,4 @@ background-size: cover;
 
 
 
-.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: auto; position:relative; }
-    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
-        .MultiCarousel .MultiCarousel-inner .item { float: left;}
-        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
-    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
-    .MultiCarousel .leftLst { left:0; }
-    .MultiCarousel .rightLst { right:0; }
-    
-        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
+

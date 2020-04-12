@@ -20,7 +20,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(require('stylus').middleware({ src: __dirname + '/app/public' }));
-app.use(express.static(__dirname + '/app/public'));
+app.use(express.static(path.join(__dirname,'app/public')));
+// app.use(express.static(__dirname + '/app/public'));
 app.use(favicon(__dirname + '/app/public/favicon.ico'));
 app.use(function (req, res, next) {
   console.log('Time:', Date.now());

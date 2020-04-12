@@ -1,9 +1,10 @@
 <link rel="stylesheet" href="/src/css/pages/home.css">
-<script src='/src/js/views/home.js'></script>
+
 
 
 <div>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -66,10 +67,9 @@
     </div>
 
 
-
     <header class="bg-primary text-center py-5 mb-4">
         <div>
-            <h1 class="font-weight-light text-white">Meet the Team</h1>
+            <h1 class="font-weight-light text-white">Projects</h1>
         </div>
     </header>
 
@@ -118,37 +118,9 @@
             alt="centered image">
     </div>
 
-    <div class="container">
-        <div class="row row-centered">
-            <div class="MultiCarousel" data-items="1,3,3,3" data-slide="1" id="MultiCarousel" data-interval="1000">
-                <div class="MultiCarousel-inner">
-                    <div class="item">
-                        <div class="pad15 pop">
-                            <img class="img-fluid" src="http://placehold.it/380?text=1">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad15 pop">
-                            <img class="img-fluid" src="http://placehold.it/380?text=2">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad15 pop">
-                            <img class="img-fluid" src="http://placehold.it/380?text=3">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad15 pop">
-                            <img class="img-fluid" src="http://placehold.it/380?text=4">
-                        </div>
-                    </div>
-                </div>
-                <button class="btn btn-primary leftLst">
-                    < </button>
-                        <button class="btn btn-primary rightLst">></button>
-            </div>
-        </div>
-        <div class="row">
+
+{{>imgSlider}}
+<div class="row">
             <div class="col-md-12 text-center">
                 <a class="btn btn-primary" href="projects">项目介绍</a>
                 <hr />
@@ -156,8 +128,6 @@
 
 
         </div>
-    </div>
-
 
 
     <div id="route">
@@ -171,7 +141,7 @@
             <div class="col-md-4">
                 <span class="fa-stack fa-4x">
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa fa-location-arrow fa-stack-1x fa-inverse"></i>
+                    <i class="fa fa-home fa-stack-1x fa-inverse"></i>
                 </span>
                 <h4 class="service-heading">线路1</h4>
                 <p class="text-muted">添加文字</p>
@@ -179,7 +149,7 @@
             <div class="col-md-4">
                 <span class="fa-stack fa-4x">
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa fa-location-arrow fa-stack-1x fa-inverse"></i>
+                    <i class="fa fa-home fa-stack-1x fa-inverse"></i>
                 </span>
                 <h4 class="service-heading">线路2</h4>
                 <p class="text-muted">添加文字</p>
@@ -187,7 +157,7 @@
             <div class="col-md-4">
                 <span class="fa-stack fa-4x">
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa fa-location-arrow fa-stack-1x fa-inverse"></i>
+                    <i class="fa fa-home fa-stack-1x fa-inverse"></i>
                 </span>
                 <h4 class="service-heading">线路3</h4>
                 <p class="text-muted">添加文字.</p>
@@ -195,7 +165,7 @@
             <div class="col-md-4">
                 <span class="fa-stack fa-4x">
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa fa-location-arrow fa-stack-1x fa-inverse"></i>
+                    <i class="fa fa-home fa-stack-1x fa-inverse"></i>
                 </span>
                 <h4 class="service-heading">线路4</h4>
                 <p class="text-muted">添加文字</p>
@@ -203,7 +173,7 @@
             <div class="col-md-4">
                 <span class="fa-stack fa-4x">
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa fa-location-arrow fa-stack-1x fa-inverse"></i>
+                    <i class="fa fa-home fa-stack-1x fa-inverse"></i>
                 </span>
                 <h4 class="service-heading">线路5</h4>
                 <p class="text-muted">添加文字.</p>
@@ -211,7 +181,7 @@
             <div class="col-md-4">
                 <span class="fa-stack fa-4x">
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa fa-location-arrow fa-stack-1x fa-inverse"></i>
+                    <i class="fa fa-home fa-stack-1x fa-inverse"></i>
                 </span>
                 <h4 class="service-heading">线路6</h4>
                 <p class="text-muted">添加文字</p>
@@ -228,6 +198,6 @@
 
 
 
-    {{>imgPopModal}}
+    
 </div>
 <!-- /.container -->
