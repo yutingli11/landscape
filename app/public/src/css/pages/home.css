@@ -48,7 +48,7 @@ height: 100%;
 
 /* Create the parallax scrolling effect */
 background-attachment: fixed;
-background-position: center;
+background-position: relative;
 background-repeat: no-repeat;
 background-size: cover;
 
