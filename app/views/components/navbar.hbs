@@ -17,8 +17,28 @@
                     <a class="nav-link js-scroll-trigger" href="/home">主页</a>
                 </li>
                 <li id="projectsDropdown" class="nav-item dropdown">
+                    <div class="nav-link">
+                        <a id="selectedProjectsLink" class="selectedProjectsSubMenu" href="/projects">项目介绍</a>
+
+                        <a aria-expanded="false" aria-haspopup="true" role="button"
+                            data-toggle="dropdown" class="dropdown-toggle selectedProjectsSubMenu" href="#">
+                            {{!-- <span id="selected">项目介绍</span> --}}
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="js-scroll-trigger" href="/projects#homevid">主视频</a></li>
+                            <li><a class="js-scroll-trigger" href="/projects#projectsInfo">项目信息</a></li>
+                            <li><a class="js-scroll-trigger" href="/projects#nineInterior">九种户型</a></li>
+                            <li><a class="js-scroll-trigger" href="/projects#amenities">周边配套</a></li>
+                            <li><a class="js-scroll-trigger" href="/projects#projectLocation">项目位置</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+
+                {{!-- <li id="projectsDropdown" class="nav-item dropdown">
                     <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown"
-                        class="dropdown-toggle nav-link" href="#">
+                        class="dropdown-toggle nav-link" href="/projects">
                         <span id="selected">项目介绍</span>
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -28,7 +48,7 @@
                         <li><a class="js-scroll-trigger" href="/projects#amenities">周边配套</a></li>
                         <li><a class="js-scroll-trigger" href="/projects#projectLocation">项目位置</a></li>
                     </ul>
-                </li>
+                </li> --}}
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="/gallery">画廊</a>
                 </li>
@@ -59,5 +79,16 @@
                         </li>
                     </ul> --}}
         </div>
+
+        <div id="socialBar">
+          <ul>
+              <li><a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+              <li><a target="_blank" href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+              <li><a target="_blank" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+              <li><a target="_blank" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+          </ul>
+      </div>
+
+
     </div>
 </nav>

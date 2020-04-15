@@ -20,10 +20,8 @@ $(document).ready(function () {
     //   });
 
     $('.dropdown-menu a').click(function () {
-        $('#selected').text($(this).text());
+        $('#selectedProjectsLink').text($(this).text());
     });
-
-
 
 
 

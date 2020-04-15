@@ -22,7 +22,7 @@
     color: #007b5e;
 }
 
-#mainNav .nav-item.dropdown #selected, #mainNav .navbar-nav .nav-item .nav-link {
+#mainNav .nav-item.dropdown .selectedProjectsSubMenu, #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 90%;
     font-weight: 400;
     padding: 0.75em 0;
@@ -31,7 +31,7 @@
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-#mainNav .nav-item.dropdown #selected:hover, #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+#mainNav .nav-item.dropdown .selectedProjectsSubMenu:hover, #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: #007b5e;
 }
 
@@ -59,4 +59,72 @@
         font-size: 1.25em;
         padding: 12px 0;
     }
+}
+
+#socialBar {
+    position: fixed;
+    top: 100px;
+    right: 0px;
+}
+
+#socialBar ul {
+    padding: 0px;
+    -webkit-transform: translate(27px, 0);
+    -moz-transform: translate(27px, 0);
+    -ms-transform: translate(27px, 0);
+    -o-transform: translate(27px, 0);
+    transform: translate(27px, 0);
+}
+
+#socialBar ul li {
+    display: block;
+    margin: 3px;
+    background: rgba(171, 219, 209, 0.36);
+    text-align: left;
+    padding: 5px;
+    -webkit-border-radius: 30px 0 0 30px;
+    -moz-border-radius: 30px 0 0 30px;
+    border-radius: 30px 0 0 30px;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+#socialBar ul li:hover {
+    -webkit-transform: translate(-27px, 0);
+    -moz-transform: translate(-27px, 0);
+    -ms-transform: translate(-27px, 0);
+    -o-transform: translate(-27px, 0);
+    transform: translate(-27px, 0);
+    background: rgba(173, 178, 177, 0.4);
+}
+
+#socialBar ul li:hover a {
+    color: #000;
+}
+
+#socialBar ul li:hover i {
+    color: #fff;
+    background: #16a085;
+}
+
+#socialBar ul li i {
+    margin-right: 10px;
+    color: #000;
+    background: #fff;
+    padding: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background: #ffffff;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
 }

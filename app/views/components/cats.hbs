@@ -1,0 +1,17 @@
+<div id="cat"></div>
+<script id="cat-template" type="text/x-handlebars-template">
+{{!-- <template id="cat-template"> --}}
+  
+    \{{#each cats}}
+    <div id="\{{name}}" class="cat">
+      <h1>\{{name}}</h1>
+      \{{#if age}}
+        <p>Age: \{{age}}</p>
+      \{{else}}
+        <p>Deceased 😭</p>
+      \{{/if}}
+    </div>
+  \{{/each}}
+  
+{{!-- </template> --}}
+</script>

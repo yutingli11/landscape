@@ -47,12 +47,18 @@ background-image: url("http://lhvilla.com/wp-content/uploads/2014/07/home-banner
 height: 100%; 
 
 /* Create the parallax scrolling effect */
+/* background-attachment: fixed; */
 background-attachment: fixed;
-background-position: relative;
+background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 
   }
+
+  @media (max-width: 768px) {
+	#route {
+		background-attachment: scroll;
+	}
 
 
 
