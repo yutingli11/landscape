@@ -67,7 +67,7 @@
     right: 0px;
 }
 
-#socialBar ul {
+#socialBar {
     padding: 0px;
     -webkit-transform: translate(27px, 0);
     -moz-transform: translate(27px, 0);
@@ -76,7 +76,7 @@
     transform: translate(27px, 0);
 }
 
-#socialBar ul li {
+#socialBar li {
     display: block;
     margin: 3px;
     background: rgba(171, 219, 209, 0.36);
@@ -92,7 +92,7 @@
     transition: all 1s;
 }
 
-#socialBar ul li:hover {
+#socialBar li:hover {
     -webkit-transform: translate(-27px, 0);
     -moz-transform: translate(-27px, 0);
     -ms-transform: translate(-27px, 0);
@@ -101,16 +101,16 @@
     background: rgba(173, 178, 177, 0.4);
 }
 
-#socialBar ul li:hover a {
+#socialBar li:hover a {
     color: #000;
 }
 
-#socialBar ul li:hover i {
+#socialBar li:hover i {
     color: #fff;
     background: #16a085;
 }
 
-#socialBar ul li i {
+#socialBar li i {
     margin-right: 10px;
     color: #000;
     background: #fff;

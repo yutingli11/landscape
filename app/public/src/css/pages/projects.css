@@ -13,21 +13,27 @@ img {
 }
 
 img.card-img-top {
-    width: 100%; /* You can set the dimensions to whatever you want */
+    width: 100%;
+    /* You can set the dimensions to whatever you want */
     height: 200px;
     object-fit: cover;
 }
 
-.map-container-6{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-    }
-    .map-container-6 iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-    }
+.map-container-6 {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-container-6 iframe {
+    left: 0;
+    top: 0;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+}
+
+#mapSep {
+    background-color: slategray;
+}

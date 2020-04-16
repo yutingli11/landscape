@@ -17,20 +17,21 @@
                     <a class="nav-link js-scroll-trigger" href="/home">主页</a>
                 </li>
                 <li id="projectsDropdown" class="nav-item dropdown">
-                    <div class="nav-link">
+                    <div id="selectedProjectsDiv" class="nav-link">
                         <a id="selectedProjectsLink" class="selectedProjectsSubMenu" href="/projects">项目介绍</a>
 
-                        <a aria-expanded="false" aria-haspopup="true" role="button"
+                        <a id="projectsDropdownCaret" aria-expanded="false" aria-haspopup="true" role="button"
                             data-toggle="dropdown" class="dropdown-toggle selectedProjectsSubMenu" href="#">
                             {{!-- <span id="selected">项目介绍</span> --}}
                             <span class="caret"></span>
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul id="projectsDropdownMenu" class="dropdown-menu">
                             <li><a class="js-scroll-trigger" href="/projects#homevid">主视频</a></li>
                             <li><a class="js-scroll-trigger" href="/projects#projectsInfo">项目信息</a></li>
                             <li><a class="js-scroll-trigger" href="/projects#nineInterior">九种户型</a></li>
-                            <li><a class="js-scroll-trigger" href="/projects#amenities">周边配套</a></li>
+                            <li><a class="js-scroll-trigger" href="/projects#amenities">项目配套</a></li>
                             <li><a class="js-scroll-trigger" href="/projects#projectLocation">项目位置</a></li>
+                            <li><a class="js-scroll-trigger" href="/projects#projectDetails">精装配套</a></li>
                         </ul>
                     </div>
                 </li>
@@ -54,6 +55,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="/membership">会员活动</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="/videos">视频集锦</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="/news">新闻事件</a>
@@ -80,14 +84,14 @@
                     </ul> --}}
         </div>
 
-        <div id="socialBar">
-          <ul>
+        {{!-- <div id="socialBar"> --}}
+          <ul id="socialBar">
               <li><a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
               <li><a target="_blank" href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
               <li><a target="_blank" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
               <li><a target="_blank" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
           </ul>
-      </div>
+      {{!-- </div> --}}
 
 
     </div>

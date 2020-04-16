@@ -19,6 +19,18 @@ $(document).ready(function () {
         ResCarouselSize();
     });
 
+    // setTimeout(ResCarousel(0, $('#MultiCarousel1'), 1), 1000);
+    setTimeout(click(1, $('#rightButton')), 1000);
+
+
+    $(function () {
+        autoMoveToRight();
+
+        function autoMoveToRight() {
+            setTimeout(click(1, $('#rightButton')), 1000);
+        }
+    });
+
     //this function define the size of the items
     function ResCarouselSize() {
         var incno = 0;

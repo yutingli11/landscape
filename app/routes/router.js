@@ -53,6 +53,13 @@ module.exports = function(app) {
         }
     ];
 
+    app.get('/videos', function(req, res) {
+        
+        res.render('videos', {
+            title : 'Videos'
+        });
+    });
+    
     app.get('/membership', function(req, res) {
         
         res.render('membership', {

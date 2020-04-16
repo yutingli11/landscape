@@ -78,26 +78,37 @@
     </div>
 </div>
 
-<div id="nineInterior">
+<div>
     <img class="aligncenter" src="http://lhvilla.com/wp-content/uploads/2014/05/always-a-good-time.png"
         alt="centered image">
-    {{>imgSlider}}
 </div>
+
+<div id="nineInterior" class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-black">
+            <h1 class="display-3">九种户型</h1>
+            <p class="lead mb-0">添加文字</p>
+        </div>
+    </div>
+</div>
+{{> multiCarouse}}
 
 <div id="amenities" class="container h-100">
     <div class="d-flex h-100 text-center align-items-center">
         <div class="w-100 text-black">
-            <h1 class="display-3">周边配套</h1>
+            <h1 class="display-3">项目配套</h1>
             <p class="lead mb-0">添加文字</p>
         </div>
     </div>
     {{>imgSlider}}
+</div>
 
- 
-        <div class="text-center">
-            <a class="btn btn-primary" href="/newsDetails">More</a>
-            <hr />
-        </div>
+
+
+<div class="text-center">
+    <a class="btn btn-primary" href="/newsDetails">More</a>
+    <hr />
+</div>
 
 
 <div id="projectLocation" class="container h-100">
@@ -107,73 +118,105 @@
             <p class="lead mb-0">添加文字</p>
         </div>
     </div>
+</div>
 
 
-    <div id="">
-        <div class="row">
+<div id="">
+    <div class="row">
+    </div>
+    <div class="row text-center">
+        <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">线路1</h4>
+            <p class="text-muted">添加文字</p>
         </div>
-        <div class="row text-center">
-            <div class="col-md-4">
-                <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa fa-home fa-stack-1x fa-inverse"></i>
-                </span>
-                <h4 class="service-heading">线路1</h4>
-                <p class="text-muted">添加文字</p>
-            </div>
-            <div class="col-md-4">
-                <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa fa-home fa-stack-1x fa-inverse"></i>
-                </span>
-                <h4 class="service-heading">线路2</h4>
-                <p class="text-muted">添加文字</p>
-            </div>
-            <div class="col-md-4">
-                <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa fa-home fa-stack-1x fa-inverse"></i>
-                </span>
-                <h4 class="service-heading">线路3</h4>
-                <p class="text-muted">添加文字.</p>
-            </div>
-            <div class="col-md-4">
-                <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa fa-home fa-stack-1x fa-inverse"></i>
-                </span>
-                <h4 class="service-heading">线路4</h4>
-                <p class="text-muted">添加文字</p>
-            </div>
-            <div class="col-md-4">
-                <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa fa-home fa-stack-1x fa-inverse"></i>
-                </span>
-                <h4 class="service-heading">线路5</h4>
-                <p class="text-muted">添加文字.</p>
-            </div>
-            <div class="col-md-4">
-                <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa fa-home fa-stack-1x fa-inverse"></i>
-                </span>
-                <h4 class="service-heading">线路6</h4>
-                <p class="text-muted">添加文字</p>
-            </div>
+        <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">线路2</h4>
+            <p class="text-muted">添加文字</p>
+        </div>
+        <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">线路3</h4>
+            <p class="text-muted">添加文字.</p>
+        </div>
+        <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">线路4</h4>
+            <p class="text-muted">添加文字</p>
+        </div>
+        <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">线路5</h4>
+            <p class="text-muted">添加文字.</p>
+        </div>
+        <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">线路6</h4>
+            <p class="text-muted">添加文字</p>
         </div>
     </div>
+</div>
 
-    <div class="text-center">
-            <a class="btn btn-primary" href="/newsDetails">精装配置</a>
-            <hr />
+<div id="projectDetails" class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-black">
+            <h1 class="display-3">精装配套</h1>
+            <p class="lead mb-0">添加文字</p>
         </div>
+    </div>
+    <div class="container">
+
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-8">
+                <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="my-3">Project Description</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida
+                    pellentesque
+                    urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies,
+                    justo eu convallis placerat, felis enim.</p>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+    </div>
+</div>
+
+<div id="mapSep">
+    <h2 class="font-weight-light text-white">Map</h2>
+</div>
 
 <div class="container">
-    <h3 class="display-3">Map</h3>
-    <!--Google map-->
-    <div id="map-container-google" class="z-depth-1-half map-container-6" style="height: 400px">
-        <iframe src="https://maps.google.com/maps?q=new%20delphi&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-            style="border:0" allowfullscreen></iframe>
+    <div class="row-fluid" align="middle">
+        <div class="col-md-8">
+            <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                src="https://maps.google.com/maps?q=new%20delphi&t=&z=13&ie=UTF8&iwloc=&output=embed">
+            </iframe>
+        </div>
     </div>
 </div>

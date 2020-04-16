@@ -23,6 +23,22 @@ $(document).ready(function () {
         $('#selectedProjectsLink').text($(this).text());
     });
 
+    $('#selectedProjectsLink').mouseenter(function(){
+        $("#projectsDropdownMenu").addClass("show");
+        $("#selectedProjectsDiv").addClass("show");
+        $("#projectsDropdownCaret").css("aria-expanded", "true");
+
+      });
+
+      $('#projectsDropdownMenu').mouseleave(function(){
+        $("#projectsDropdown").find(".show").removeClass('show');
+    });
+
+
+      
+
+
+
 
 
 
