@@ -22,7 +22,8 @@ img {
 }
 
 img.card-img-top {
-    width: 100%; /* You can set the dimensions to whatever you want */
+    width: 100%;
+    /* You can set the dimensions to whatever you want */
     height: 200px;
     object-fit: cover;
 }
@@ -35,38 +36,29 @@ img.card-img-top {
     background-attachment: scroll;
     background-position: center center;
     background-size: cover; */
+    /* The image used */
+    background-image: url("http://lhvilla.com/wp-content/uploads/2014/07/home-banner-004.jpg");
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    /* background-attachment: fixed; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.carousel-caption{
+    top: 50%;
+transform: translateY(-50%);
+bottom: initial;
+-webkit-transform-style: preserve-3d;
+-moz-transform-style: preserve-3d;
+transform-style: preserve-3d;
+}
 
-/* The image used */
-background-image: url("http://lhvilla.com/wp-content/uploads/2014/07/home-banner-004.jpg");
-
-
-
-
-/* Full height */
-height: 100%; 
-
-/* Create the parallax scrolling effect */
-/* background-attachment: fixed; */
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-
-  }
-
-  @media (max-width: 768px) {
-	#route {
-		background-attachment: scroll;
-	}
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 768px) {
+    #route {
+        background-attachment: scroll;
+    }
+}

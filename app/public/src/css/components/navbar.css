@@ -92,13 +92,15 @@
     transition: all 1s;
 }
 
-#socialBar li:hover {
-    -webkit-transform: translate(-27px, 0);
-    -moz-transform: translate(-27px, 0);
-    -ms-transform: translate(-27px, 0);
-    -o-transform: translate(-27px, 0);
-    transform: translate(-27px, 0);
-    background: rgba(173, 178, 177, 0.4);
+@media (min-width: 992px) {
+    #socialBar li:hover {
+        -webkit-transform: translate(-27px, 0);
+        -moz-transform: translate(-27px, 0);
+        -ms-transform: translate(-27px, 0);
+        -o-transform: translate(-27px, 0);
+        transform: translate(-27px, 0);
+        background: rgba(173, 178, 177, 0.4);
+    }
 }
 
 #socialBar li:hover a {
