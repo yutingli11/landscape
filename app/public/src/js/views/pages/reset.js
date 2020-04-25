@@ -1,5 +1,5 @@
 
-$(document).ready(function(){
+$(document).ready(function($){
 	
 	var rv = new ResetValidator();
 	

@@ -1,4 +1,6 @@
 <link rel="stylesheet" href="/src/css/pages/projects.css">
+<script src="/src/js/views/pages/projects.js"></script>
+
 
 
 {{!-- <link rel="stylesheet" href="/src/css/grayscale.css"> --}}
@@ -18,53 +20,6 @@
 <div id="projectsInfo" class="container h-100">
     <div class="d-flex h-100 text-center align-items-center">
         <div class="w-100 text-black">
-            <h1 class="display-3">总</h1>
-            <p class="lead mb-0">添加文字</p>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <!-- Team Member 1 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-1-539x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
-                </div>
-            </div>
-        </div>
-        <!-- Team Member 2 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-6-600x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
-                </div>
-            </div>
-        </div>
-        <!-- Team Member 3 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-12-600x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container h-100">
-    <div class="d-flex h-100 text-center align-items-center">
-        <div class="w-100 text-black">
             <h1 class="display-3">第一期</h1>
             <p class="lead mb-0">添加文字</p>
         </div>
@@ -73,7 +28,7 @@
 
 <div class="container">
     <div>
-        <img class="aligncenter" src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-1-539x400.jpg"
+        <img class="aligncenter" src="/img/projectInfo.jpg"
             alt="centered image">
     </div>
 </div>
@@ -90,111 +45,26 @@
             <p class="lead mb-0">添加文字</p>
         </div>
     </div>
-    <div class="row">
-        <!-- Team Member 1 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-1-539x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
+    <div id="nineInteriorHolder"></div>
+    <script id="nineInteriorHolder-template" type="text/x-handlebars-template">
+        \{{#each nineInteriorObjs}}
+                <div class="row">
+                    \{{#each p}}
+                    <!-- Team Member 1 -->
+                    <div class="col-xl-4 col-md-6 col-sm-1 col-xs-6 mb-4">
+                        <div class="card border-0 shadow">
+                            <img src="\{{img}}"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-0">\{{txtHeader}}</h5>
+                                <div class="card-text text-black-50">\{{txtContent}}</div>
+                            </div>
+                        </div>
+                    </div>
+                 \{{/each}}
                 </div>
-            </div>
-        </div>
-        <!-- Team Member 2 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-6-600x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
-                </div>
-            </div>
-        </div>
-        <!-- Team Member 3 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-12-600x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <!-- Team Member 1 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-1-539x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
-                </div>
-            </div>
-        </div>
-        <!-- Team Member 2 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-6-600x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
-                </div>
-            </div>
-        </div>
-        <!-- Team Member 3 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-12-600x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <!-- Team Member 1 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-1-539x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
-                </div>
-            </div>
-        </div>
-        <!-- Team Member 2 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-6-600x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
-                </div>
-            </div>
-        </div>
-        <!-- Team Member 3 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-12-600x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
-                </div>
-            </div>
-        </div>
-    </div>
+        \{{/each}}
+    </script>
 </div>
 
 
@@ -205,110 +75,26 @@
             <p class="lead mb-0">添加文字</p>
         </div>
     </div>
-    <div class="row">
-        <!-- Team Member 1 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-1-539x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
+    <div id="amenitiesHolder"></div>
+    <script id="amenitiesHolder-template" type="text/x-handlebars-template">
+        \{{#each amenitiesObjs}}
+                <div class="row">
+                    \{{#each p}}
+                    <!-- Team Member 1 -->
+                    <div class="col-xl-4 col-md-6 col-sm-1 col-xs-6 mb-4">
+                        <div class="card border-0 shadow">
+                            <img src="\{{img}}"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-0">\{{txtHeader}}</h5>
+                                <div class="card-text text-black-50">\{{txtContent}}</div>
+                            </div>
+                        </div>
+                    </div>
+                 \{{/each}}
                 </div>
-            </div>
-        </div>
-        <!-- Team Member 2 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-6-600x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
-                </div>
-            </div>
-        </div>
-        <!-- Team Member 3 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-12-600x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
-                </div>
-            </div>
-        </div>
-    </div><div class="row">
-        <!-- Team Member 1 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-1-539x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
-                </div>
-            </div>
-        </div>
-        <!-- Team Member 2 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-6-600x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
-                </div>
-            </div>
-        </div>
-        <!-- Team Member 3 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-12-600x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
-                </div>
-            </div>
-        </div>
-    </div><div class="row">
-        <!-- Team Member 1 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-1-539x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
-                </div>
-            </div>
-        </div>
-        <!-- Team Member 2 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-6-600x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
-                </div>
-            </div>
-        </div>
-        <!-- Team Member 3 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-12-600x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+        \{{/each}}
+    </script>
 </div>
 
 
@@ -316,6 +102,35 @@
 <div class="text-center">
     <a class="btn btn-primary" href="/newsDetails">More</a>
     <hr />
+</div>
+
+<div id="projectDetails" class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-black">
+            <h1 class="display-3">精装配置</h1>
+            <p class="lead mb-0">添加文字</p>
+        </div>
+    </div>
+    <div id="projectDetailsHolder"></div>
+    <script id="projectDetailsHolder-template" type="text/x-handlebars-template">
+        \{{#each projectDetailsObjs}}
+                <div class="row">
+                    \{{#each p}}
+                    <!-- Team Member 1 -->
+                    <div class="col-xl-4 col-md-6 col-sm-1 col-xs-6 mb-4">
+                        <div class="card border-0 shadow">
+                            <img src="\{{img}}"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-0">\{{txtHeader}}</h5>
+                                <div class="card-text text-black-50">\{{txtContent}}</div>
+                            </div>
+                        </div>
+                    </div>
+                 \{{/each}}
+                </div>
+        \{{/each}}
+    </script>
 </div>
 
 
@@ -384,47 +199,16 @@
     </div>
 </div>
 
-<div id="projectDetails" class="container h-100">
-    <div class="d-flex h-100 text-center align-items-center">
-        <div class="w-100 text-black">
-            <h1 class="display-3">精装配套</h1>
-            <p class="lead mb-0">添加文字</p>
-        </div>
-    </div>
-    <div class="container">
-
-
-        <!-- Portfolio Item Row -->
-        <div class="row">
-
-            <div class="col-md-8">
-                <img class="img-fluid" src="http://placehold.it/750x500" alt="">
-            </div>
-
-            <div class="col-md-4">
-                <h3 class="my-3">Project Description</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida
-                    pellentesque
-                    urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies,
-                    justo eu convallis placerat, felis enim.</p>
-            </div>
-
-        </div>
-        <!-- /.row -->
-
-    </div>
-</div>
-
 <div id="mapSep">
     <h2 class="font-weight-light text-white">Map</h2>
 </div>
 
-<div class="container">
+{{!-- <div class="container"> --}}
     <div class="row-fluid" align="middle">
-        <div class="col-md-8">
+        <div class="col-sm-12">
             <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
                 src="https://maps.google.com/maps?q=new%20delphi&t=&z=13&ie=UTF8&iwloc=&output=embed">
             </iframe>
         </div>
     </div>
-</div>
+{{!-- </div> --}}

@@ -54,21 +54,25 @@ section#contact :-ms-input-placeholder {
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-.map-container-6 {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 200px;
-}
-
-.map-container-6 iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-}
-
-#contactUsAddress {
+#contactUsAddress,
+#mapSep {
     background-color: slategray;
+}
+
+.aligncenter {
+    display: block;
+    /* margin: 15px; */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+h5.noMargin{
+    margin-bottom: 0px;
 }

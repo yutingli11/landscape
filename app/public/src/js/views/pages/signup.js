@@ -1,5 +1,5 @@
 
-$(document).ready(function(){
+$(document).ready(function($){
 	
 	var av = new AccountValidator();
 	var sc = new SignupController();

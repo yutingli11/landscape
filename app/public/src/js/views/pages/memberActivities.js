@@ -1,18 +1,9 @@
-"use strict"; // Start of use strict
-// Handlebars.registerHelper('object', function({hash}) {
-//     return hash;
-//   })
-//   Handlebars.registerHelper("arr", (...args) => args.slice(0, -1))
-
-//   Handlebars.registerPartial("lifestyles", Handlebars.templates['../views/components/multiImgCarouselModal']());
-
-
+"use strict"; 
 $(document).ready(function ($) {
 
 
     
-    // var carouselItemObjs = someFunc();
-    var carouselItemObjs = [
+    var nineInteriorObjs = [
         {
             p: [{ img: 'http://placehold.it/380?text=1', txtHeader: '添加文字1', txtContent: '添加文字1' },
             { img: 'http://placehold.it/380?text=2', txtHeader: '添加文字2', txtContent: '添加文字2' },
@@ -35,14 +26,14 @@ $(document).ready(function ($) {
 
 
 
-    var template = document.getElementById('multiImgCarouselModal-template').innerHTML;
+    var template = document.getElementById('nineInteriorHolder-template').innerHTML;
     var renderCarouselItems = Handlebars.compile(template);
     
     // var html = renderCarouselItems();
     var html = renderCarouselItems({
-        carouselItems: carouselItemObjs
+        nineInteriorObjs: nineInteriorObjs
     });
-    document.getElementById('multiImgCarouselModalHolder').innerHTML = html;
+    document.getElementById('nineInteriorHolder').innerHTML = html;
 
 
 });

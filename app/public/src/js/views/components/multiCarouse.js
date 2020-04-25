@@ -1,5 +1,5 @@
 "use strict"; // Start of use strict
-$(document).ready(function () {
+$(document).ready(function ($) {
     /*
         Carousel
     */

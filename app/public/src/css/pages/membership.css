@@ -1,7 +1,21 @@
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
 img.card-img-top {
     width: 100%; /* You can set the dimensions to whatever you want */
     height: 200px;
     object-fit: cover;
+}
+
+.aligncenter {
+    display: block;
+    margin: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #memberFunction {

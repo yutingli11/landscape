@@ -2,6 +2,7 @@
 <script src="/src/js/views/pages/gallery.js"></script>
 
 
+
 <br>
 <br>
 <br>
@@ -26,41 +27,26 @@
 </div>
 
 <div class="container">
-    <div class="row">
-        <!-- Team Member 1 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-1-539x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
+    <div id="landscapeSketchHolder"></div>
+    <script id="landscapeSketchHolder-template" type="text/x-handlebars-template">
+        \{{#each landscapeSketchObjs}}
+                <div class="row">
+                    \{{#each p}}
+                    <!-- Team Member 1 -->
+                    <div class="col-xl-4 col-md-6 col-sm-1 col-xs-6 mb-4">
+                        <div class="card border-0 shadow pop">
+                            <img src="\{{img}}"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-0">\{{txtHeader}}</h5>
+                                <div class="card-text text-black-50">\{{txtContent}}</div>
+                            </div>
+                        </div>
+                    </div>
+                 \{{/each}}
                 </div>
-            </div>
-        </div>
-        <!-- Team Member 2 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-6-600x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
-                </div>
-            </div>
-        </div>
-        <!-- Team Member 3 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-12-600x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
-                </div>
-            </div>
-        </div>
-    </div>
+        \{{/each}}
+    </script>
 </div>
 
 <div class="container h-100">
@@ -73,42 +59,28 @@
 </div>
 
 <div class="container">
-    <div class="row">
-        <!-- Team Member 1 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-1-539x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
+    <div id="architecturalBeautyHolder"></div>
+    <script id="architecturalBeautyHolder-template" type="text/x-handlebars-template">
+        \{{#each architecturalBeautyObjs}}
+                <div class="row">
+                    \{{#each p}}
+                    <!-- Team Member 1 -->
+                    <div class="col-xl-4 col-md-6 col-sm-1 col-xs-6 mb-4">
+                        <div class="card border-0 shadow pop">
+                            <img src="\{{img}}"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-0">\{{txtHeader}}</h5>
+                                <div class="card-text text-black-50">\{{txtContent}}</div>
+                            </div>
+                        </div>
+                    </div>
+                 \{{/each}}
                 </div>
-            </div>
-        </div>
-        <!-- Team Member 2 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-6-600x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
-                </div>
-            </div>
-        </div>
-        <!-- Team Member 3 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-12-600x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
-                </div>
-            </div>
-        </div>
-    </div>
+        \{{/each}}
+    </script>
 </div>
+
 <div class="container h-100">
     <div class="d-flex h-100 text-center align-items-center">
         <div class="w-100 text-black">
@@ -119,42 +91,28 @@
 </div>
 
 <div class="container">
-    <div class="row">
-        <!-- Team Member 1 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-1-539x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
+    <div id="interiorDesignHolder"></div>
+    <script id="interiorDesignHolder-template" type="text/x-handlebars-template">
+        \{{#each interiorDesignObjs}}
+                <div class="row">
+                    \{{#each p}}
+                    <!-- Team Member 1 -->
+                    <div class="col-xl-4 col-md-6 col-sm-1 col-xs-6 mb-4">
+                        <div class="card border-0 shadow pop">
+                            <img src="\{{img}}"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-0">\{{txtHeader}}</h5>
+                                <div class="card-text text-black-50">\{{txtContent}}</div>
+                            </div>
+                        </div>
+                    </div>
+                 \{{/each}}
                 </div>
-            </div>
-        </div>
-        <!-- Team Member 2 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-6-600x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
-                </div>
-            </div>
-        </div>
-        <!-- Team Member 3 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-12-600x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
-                </div>
-            </div>
-        </div>
-    </div>
+        \{{/each}}
+    </script>
 </div>
+
 <div class="container h-100">
     <div class="d-flex h-100 text-center align-items-center">
         <div class="w-100 text-black">
@@ -165,39 +123,25 @@
 </div>
 
 <div class="container">
-    <div class="row">
-        <!-- Team Member 1 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-1-539x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
+    <div id="lifestyleHolder"></div>
+    <script id="lifestyleHolder-template" type="text/x-handlebars-template">
+        \{{#each lifestyleObjs}}
+                <div class="row">
+                    \{{#each p}}
+                    <!-- Team Member 1 -->
+                    <div class="col-xl-4 col-md-6 col-sm-1 col-xs-6 mb-4">
+                        <div class="card border-0 shadow pop">
+                            <img src="\{{img}}"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-0">\{{txtHeader}}</h5>
+                                <div class="card-text text-black-50">\{{txtContent}}</div>
+                            </div>
+                        </div>
+                    </div>
+                 \{{/each}}
                 </div>
-            </div>
-        </div>
-        <!-- Team Member 2 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-6-600x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
-                </div>
-            </div>
-        </div>
-        <!-- Team Member 3 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-12-600x400.jpg" class="card-img-top"
-                    alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">添加文字</h5>
-                    <div class="card-text text-black-50">添加文字</div>
-                </div>
-            </div>
-        </div>
-    </div>
+        \{{/each}}
+    </script>
 </div>
+{{>imgPopModal}}

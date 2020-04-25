@@ -1,0 +1,40 @@
+<script src="/src/js/views/pages/memberActivities.js"></script>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- Page Content -->
+<div class="container">
+
+      <header class="bg-primary text-center py-5 mb-4">
+        <div>
+            <h1 class="font-weight-light text-white">活动通知</h1>
+        </div>
+    </header>
+
+    <div id="nineInteriorHolder"></div>
+    <script id="nineInteriorHolder-template" type="text/x-handlebars-template">
+        \{{#each nineInteriorObjs}}
+                <div class="row">
+                    \{{#each p}}
+                    <!-- Team Member 1 -->
+                    <div class="col-xl-4 col-md-6 col-sm-1 col-xs-6 mb-4">
+                        <div class="card border-0 shadow">
+                            <img src="\{{img}}"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-0">\{{txtHeader}}</h5>
+                                <div class="card-text text-black-50">\{{txtContent}}</div>
+                            </div>
+                        </div>
+                    </div>
+                 \{{/each}}
+                </div>
+        \{{/each}}
+    </script>
+
+</div>
+<!-- /.container -->

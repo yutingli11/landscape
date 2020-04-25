@@ -1,5 +1,5 @@
 "use strict"; // Start of use strict
-$(document).ready(function () {
+$(document).ready(function ($) {
 
     var translator = new Translator({
         persist: false,
@@ -19,23 +19,53 @@ $(document).ready(function () {
     //     }
     //   });
 
+
+    // $('ul.nav li.dropdown').hover(function () {
+    //     $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+    // }, function () {
+    //     $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+    // });
+
     $('.dropdown-menu a').click(function () {
         $('#selectedProjectsLink').text($(this).text());
     });
 
-    $('#selectedProjectsLink').mouseenter(function(){
+    $('#selectedProjectsLink').mouseenter(function () {
         $("#projectsDropdownMenu").addClass("show");
         $("#selectedProjectsDiv").addClass("show");
         $("#projectsDropdownCaret").css("aria-expanded", "true");
 
-      });
+    });
 
-      $('#projectsDropdownMenu').mouseleave(function(){
+    $('#projectsDropdownMenu').mouseleave(function () {
         $("#projectsDropdown").find(".show").removeClass('show');
     });
 
 
-      
+
+        $('#panelHandle').hover(function() {
+            $('#sidePanel').stop(true, false).animate({
+                'right': '0px'
+            }, 900);
+        }, function() {
+            jQuery.noConflict();
+        });
+
+        jQuery('#sidePanel').hover(function() {
+            // Do nothing
+        }, function() {
+
+            jQuery.noConflict();
+            jQuery('#sidePanel').animate({
+                right: '-340px'
+            }, 800);
+
+        });
+
+
+
+
+
 
 
 
