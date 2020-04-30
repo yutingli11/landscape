@@ -45,6 +45,10 @@ if (app.get('env') == 'development')
    app.use(errorHandler());
 }
 
+app.get("*", function (req, res, next) {
+    res.redirect("https://" + req.headers.host + "/" + req.path);
+});
+
 // Starting both http & https servers
 const httpServer = http.createServer(app);
 const httpsServer = https.createServer(options, app);
