@@ -20,7 +20,7 @@ $(document).ready(function ($) {
     //   });
 
 
-    // $('ul.nav li.dropdown').hover(function () {
+    // $('ul.navbar-nav li.dropdown').hover(function () {
     //     $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
     // }, function () {
     //     $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
@@ -30,15 +30,16 @@ $(document).ready(function ($) {
         $('#selectedProjectsLink').text($(this).text());
     });
 
-    $('#selectedProjectsLink').mouseenter(function () {
+    $('#projectsDropdown').mouseenter(function () {
         $("#projectsDropdownMenu").addClass("show");
         $("#selectedProjectsDiv").addClass("show");
-        $("#projectsDropdownCaret").css("aria-expanded", "true");
+        // $("#projectsDropdownCaret").css("aria-expanded", "true");
 
     });
 
-    $('#projectsDropdownMenu').mouseleave(function () {
+    $('#projectsDropdown').mouseleave(function () {
         $("#projectsDropdown").find(".show").removeClass('show');
+        // $("#projectsDropdownCaret").css("aria-expanded", "false");
     });
 
 

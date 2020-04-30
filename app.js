@@ -1,4 +1,6 @@
-var http = require('http');
+const fs = require('fs');
+const http = require('http');
+const https = require('https');
 var express = require('express');
 var path = require('path');
 var expresshbs  = require('express-handlebars');
@@ -8,7 +10,14 @@ var favicon = require('serve-favicon');
 
 var app = express();
 
-app.set('port', process.env.PORT || 3000);
+
+// Certificate
+const options = {
+    cert: fs.readFileSync('/etc/letsencrypt/live/landscapeholidayvilla.com/fullchain.pem'),
+    key: fs.readFileSync('/etc/letsencrypt/live/landscapeholidayvilla.com/privkey.pem')
+};
+
+// app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'app/views/pages'));
 app.engine('.hbs', expresshbs({defaultLayout: 'layout',
                            layoutsDir: 'app/views/layouts/',
@@ -36,6 +45,19 @@ if (app.get('env') == 'development')
    app.use(errorHandler());
 }
 
-http.createServer(app).listen(app.get('port'), function(){
-	console.log('Express server listening on port ' + app.get('port'));
+// Starting both http & https servers
+const httpServer = http.createServer(app);
+const httpsServer = https.createServer(credentials, app);
+
+httpServer.listen(80, () => {
+	console.log('HTTP Server running on port 80');
 });
+
+httpsServer.listen(443, () => {
+	console.log('HTTPS Server running on port 443');
+});
+
+
+// http.createServer(app).listen(app.get('port'), function(){
+// 	console.log('Express server listening on port ' + app.get('port'));
+// });
