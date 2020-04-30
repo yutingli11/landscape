@@ -38,6 +38,20 @@ app.use(function (req, res, next) {
   next();
 });
 
+// app.get("*", function (req, res, next) {
+//     res.redirect("https://" + req.headers.host + "/" + req.path);
+// });
+
+app.use (function (req, res, next) {
+    if (req.secure) {
+            // request was via https, so do no special handling
+            next();
+    } else {
+            // request was via http, so redirect to https
+            res.redirect('https://' + req.headers.host + req.url);
+    }
+});
+
 require('./app/routes/router')(app);
 
 if (app.get('env') == 'development')
@@ -45,9 +59,6 @@ if (app.get('env') == 'development')
    app.use(errorHandler());
 }
 
-app.get("*", function (req, res, next) {
-    res.redirect("https://" + req.headers.host + "/" + req.path);
-});
 
 // Starting both http & https servers
 const httpServer = http.createServer(app);
