@@ -31,13 +31,13 @@ img.card-img-top {
 #route {
     /* text-align: center;
     color: white;
-    background-image: url("https://ktar.com/wp-content/uploads/2019/10/21m-pv-home-1-539x400.jpg");
+    background-image: url("http://lhvilla.com/wp-content/uploads/2014/07/home-banner-004.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
     background-size: cover; */
     /* The image used */
-    background-image: url("http://lhvilla.com/wp-content/uploads/2014/07/home-banner-004.jpg");
+    background-image: url("/img/home/routeBackground.jpg");
     /* Full height */
     height: 100%;
     /* Create the parallax scrolling effect */
