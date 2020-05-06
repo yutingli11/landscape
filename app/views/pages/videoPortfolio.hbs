@@ -16,10 +16,11 @@
                 <h3>\{{videoCatTitle}}</h3>
                 <div class="row">
                     \{{#each p}}
-                    <div class="col-xl-4 col-md-6 col-sm-1 col-xs-6 mb-4">
+                    <div class="col-xl-4 col-md-4 col-sm-4 col-xs-4 mb-4">
                         <div class="card border-0 shadow">
-                            <div style="background-image:url(\{{}})" class="videos overlay embed-responsive embed-responsive-350by619">
-                                <video playsinline="playsinline" muted="muted" loop="loop">
+                            <div style="background-image:url(\{{bckground}});background-repeat:no-repeat;background-position:0px 1px;background-size: 350px;" 
+                                 class="videos overlay embed-responsive embed-responsive-350by619">
+                                <video playsinline="playsinline" loop="loop">
                                     <source src="\{{video}}" type="video/mp4">
                                 </video>
                             </div>

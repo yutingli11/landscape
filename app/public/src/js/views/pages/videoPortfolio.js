@@ -2,27 +2,35 @@
 $(document).ready(function ($) {
     var videosObjs = [
         {
-            p: [{ video: '/videos/1.mp4', txtHeader: '添加文字1', txtContent: '添加文字1' },
-            { video: '/videos/2.mp4', txtHeader: '添加文字2', txtContent: '添加文字2' },
-            { video: '/videos/3.mp4', txtHeader: '添加文字3', txtContent: '添加文字3' }],
+            p: [
+                { video: '/videos/1.mp4', txtHeader: '添加文字1', txtContent: '添加文字1', bckground: '/videos/1.jpg'},
+                { video: '/videos/2.mp4', txtHeader: '添加文字2', txtContent: '添加文字2', bckground: ''},
+                { video: '/videos/3.mp4', txtHeader: '添加文字3', txtContent: '添加文字3', bckground: '' }
+            ],
             videoCatTitle: ''
         },
         {
-            p: [{ video: '/videos/4.mp4', txtHeader: '添加文字4', txtContent: '添加文字4' },
-            { video: '/videos/5.mp4', txtHeader: '添加文字5', txtContent: '添加文字5' },
-            { video: '/videos/6.mp4', txtHeader: '添加文字6', txtContent: '添加文字6' }],
+            p: [
+                { video: '/videos/4.mp4', txtHeader: '添加文字4', txtContent: '添加文字4' },
+                { video: '/videos/5.mp4', txtHeader: '添加文字5', txtContent: '添加文字5' },
+                { video: '/videos/6.mp4', txtHeader: '添加文字6', txtContent: '添加文字6' }
+            ],
             videoCatTitle: ''
         },
         {
-            p: [{ video: '/videos/7.mp4', txtHeader: '添加文字4', txtContent: '添加文字4' },
-            { video: '/videos/8.mp4', txtHeader: '添加文字5', txtContent: '添加文字5' },
-            { video: '/videos/9.mp4', txtHeader: '添加文字6', txtContent: '添加文字6' }],
+            p: [
+                { video: '/videos/7.mp4', txtHeader: '添加文字4', txtContent: '添加文字4' },
+                { video: '/videos/8.mp4', txtHeader: '添加文字5', txtContent: '添加文字5' },
+                { video: '/videos/9.mp4', txtHeader: '添加文字6', txtContent: '添加文字6' }
+            ],
             videoCatTitle: ''
         },
         {
-            p: [{ video: '/videos/10.mp4', txtHeader: '添加文字4', txtContent: '添加文字4' },
-            { video: '/videos/11.mp4', txtHeader: '添加文字5', txtContent: '添加文字5' },
-            { video: '/videos/12.mp4', txtHeader: '添加文字6', txtContent: '添加文字6' }],
+            p: [
+                { video: '/videos/10.mp4', txtHeader: '添加文字4', txtContent: '添加文字4' },
+                { video: '/videos/11.mp4', txtHeader: '添加文字5', txtContent: '添加文字5' },
+                { video: '/videos/12.mp4', txtHeader: '添加文字6', txtContent: '添加文字6' }
+            ],
             videoCatTitle: ''
         }
     ];
