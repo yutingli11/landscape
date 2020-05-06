@@ -37,33 +37,33 @@ module.exports = function(app) {
         });
     });
 
-    app.get('/videos', function(req, res) {
+    app.get('/videoPortfolio', function(req, res) {
         
-        res.render('videos', {
-            title : 'Videos'
+        res.render('videoPortfolio', {
+            title : 'Video Portfolio'
         });
     });
     
-    app.get('/membership', function(req, res) {
+    app.get('/projectNews', function(req, res) {
         
-        res.render('membership', {
-            title : 'Membership'
+        res.render('projectNews', {
+            title : 'Project News'
         });
     });
 
-    app.get('/memberActivities', function(req, res) {
+    // app.get('/memberActivities', function(req, res) {
         
-        res.render('memberActivities', {
-            title : 'MemberActivities'
-        });
-    });
+    //     res.render('memberActivities', {
+    //         title : 'MemberActivities'
+    //     });
+    // });
 
-    app.get('/news', function(req, res) {
+    // app.get('/news', function(req, res) {
         
-        res.render('news', {
-            title : 'News'
-        });
-    });
+    //     res.render('news', {
+    //         title : 'News'
+    //     });
+    // });
 
     app.get('/newsDetails', function(req, res) {
         

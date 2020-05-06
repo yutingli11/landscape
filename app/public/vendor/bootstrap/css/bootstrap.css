@@ -7147,6 +7147,10 @@ button.bg-dark:focus {
   padding-top: 100%;
 }
 
+.embed-responsive-350by619::before {
+  padding-top: 177%;
+}
+
 .flex-row {
   -ms-flex-direction: row !important;
   flex-direction: row !important;

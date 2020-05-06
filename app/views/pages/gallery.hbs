@@ -16,8 +16,38 @@
 
 {{!-- <p>{{carouselItemObjss}}</p> --}}
 
-
 <div class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-black">
+            <h1 class="display-3">Gallery</h1>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div id="galleryHolder"></div>
+    <script id="galleryHolder-template" type="text/x-handlebars-template">
+        \{{#each galleryObjs}}
+                <div class="row">
+                    \{{#each p}}
+                    <div class="col-xl-4 col-md-6 col-sm-1 col-xs-6 mb-4">
+                        <div class="card border-0 shadow pop">
+                            <img src="\{{img}}"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-0">\{{txtHeader}}</h5>
+                                <div class="card-text text-black-50">\{{txtContent}}</div>
+                            </div>
+                        </div>
+                    </div>
+                 \{{/each}}
+                </div>
+        \{{/each}}
+    </script>
+</div>
+
+
+
+{{!-- <div class="container h-100">
     <div class="d-flex h-100 text-center align-items-center">
         <div class="w-100 text-black">
             <h1 class="display-3">Landscape sketch</h1>
@@ -25,7 +55,6 @@
         </div>
     </div>
 </div>
-
 <div class="container">
     <div id="landscapeSketchHolder"></div>
     <script id="landscapeSketchHolder-template" type="text/x-handlebars-template">
@@ -57,7 +86,6 @@
         </div>
     </div>
 </div>
-
 <div class="container">
     <div id="architecturalBeautyHolder"></div>
     <script id="architecturalBeautyHolder-template" type="text/x-handlebars-template">
@@ -89,7 +117,6 @@
         </div>
     </div>
 </div>
-
 <div class="container">
     <div id="interiorDesignHolder"></div>
     <script id="interiorDesignHolder-template" type="text/x-handlebars-template">
@@ -121,7 +148,6 @@
         </div>
     </div>
 </div>
-
 <div class="container">
     <div id="lifestyleHolder"></div>
     <script id="lifestyleHolder-template" type="text/x-handlebars-template">
@@ -143,5 +169,5 @@
                 </div>
         \{{/each}}
     </script>
-</div>
+</div> --}}
 {{>imgPopModal}}

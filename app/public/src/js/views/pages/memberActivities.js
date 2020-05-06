@@ -3,7 +3,7 @@ $(document).ready(function ($) {
 
 
     
-    var nineInteriorObjs = [
+    var houseLayoutObjs = [
         {
             p: [{ img: 'http://placehold.it/380?text=1', txtHeader: '添加文字1', txtContent: '添加文字1' },
             { img: 'http://placehold.it/380?text=2', txtHeader: '添加文字2', txtContent: '添加文字2' },
@@ -26,14 +26,14 @@ $(document).ready(function ($) {
 
 
 
-    var template = document.getElementById('nineInteriorHolder-template').innerHTML;
+    var template = document.getElementById('houseLayoutHolder-template').innerHTML;
     var renderCarouselItems = Handlebars.compile(template);
     
     // var html = renderCarouselItems();
     var html = renderCarouselItems({
-        nineInteriorObjs: nineInteriorObjs
+        houseLayoutObjs: houseLayoutObjs
     });
-    document.getElementById('nineInteriorHolder').innerHTML = html;
+    document.getElementById('houseLayoutHolder').innerHTML = html;
 
 
 });

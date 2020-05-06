@@ -8,9 +8,6 @@
 
 
 $(document).ready(function ($) {
-
-
-    
     // var carouselItemObjs = someFunc();
     var carouselItemObjs = [
         {
@@ -32,17 +29,11 @@ $(document).ready(function ($) {
             isActive: ''
         }
     ];
-
-
-
     var template = document.getElementById('multiImgCarouselModal-template').innerHTML;
     var renderCarouselItems = Handlebars.compile(template);
-    
     // var html = renderCarouselItems();
     var html = renderCarouselItems({
         carouselItems: carouselItemObjs
     });
     document.getElementById('multiImgCarouselModalHolder').innerHTML = html;
-
-
 });

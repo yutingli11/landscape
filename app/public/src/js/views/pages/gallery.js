@@ -1,184 +1,167 @@
 "use strict"; // Start of use strict
-
-function someFunc() {
-
-    var carouselItemObjs = [
-        {
-            p: [{ img: 'http://placehold.it/380?text=1', txtHeader: '添加文字1', txtContent: '添加文字1' },
-            { img: 'http://placehold.it/380?text=2', txtHeader: '添加文字2', txtContent: '添加文字2' },
-            { img: 'http://placehold.it/380?text=3', txtHeader: '添加文字3', txtContent: '添加文字3' }],
-            isActive: 'active'
-        },
-        {
-            p: [{ img: 'http://placehold.it/380?text=4', txtHeader: '添加文字4', txtContent: '添加文字4' },
-            { img: 'http://placehold.it/380?text=5', txtHeader: '添加文字5', txtContent: '添加文字5' },
-            { img: 'http://placehold.it/380?text=6', txtHeader: '添加文字6', txtContent: '添加文字6' }],
-            isActive: ''
-        },
-        {
-            p: [{ img: 'http://placehold.it/380?text=7', txtHeader: '添加文字7', txtContent: '添加文字7' },
-            { img: 'http://placehold.it/380?text=8', txtHeader: '添加文字8', txtContent: '添加文字8' },
-            { img: 'http://placehold.it/380?text=9', txtHeader: '添加文字9', txtContent: '添加文字9' }],
-            isActive: ''
-        }
-    ];
-
-    return carouselItemObjs;
-}
-
-
 $(document).ready(function ($) {
-
-    var landscapeSketchObjs = [
+    var galleryObjs = [
         {
-            p: [{ img: 'http://placehold.it/380?text=1', txtHeader: '添加文字1', txtContent: '添加文字1' },
-            { img: 'http://placehold.it/380?text=2', txtHeader: '添加文字2', txtContent: '添加文字2' },
-            { img: 'http://placehold.it/380?text=3', txtHeader: '添加文字3', txtContent: '添加文字3' }],
-            isActive: 'active'
+            p: [{ img: '/img/gallery/1.jpg', txtHeader: '添加文字1', txtContent: '添加文字1' },
+            { img: '/img/gallery/2.jpg', txtHeader: '添加文字2', txtContent: '添加文字2' },
+            { img: '/img/gallery/3.jpg', txtHeader: '添加文字3', txtContent: '添加文字3' }]
         },
         {
-            p: [{ img: 'http://placehold.it/380?text=4', txtHeader: '添加文字4', txtContent: '添加文字4' },
-            { img: 'http://placehold.it/380?text=5', txtHeader: '添加文字5', txtContent: '添加文字5' },
-            { img: 'http://placehold.it/380?text=6', txtHeader: '添加文字6', txtContent: '添加文字6' }],
-            isActive: ''
+            p: [{ img: '/img/gallery/4.jpg', txtHeader: '添加文字4', txtContent: '添加文字4' },
+            { img: '/img/gallery/5.jpg', txtHeader: '添加文字5', txtContent: '添加文字5' },
+            { img: '/img/gallery/6.jpg', txtHeader: '添加文字6', txtContent: '添加文字6' }]
         },
         {
-            p: [{ img: 'http://placehold.it/380?text=7', txtHeader: '添加文字7', txtContent: '添加文字7' },
-            { img: 'http://placehold.it/380?text=8', txtHeader: '添加文字8', txtContent: '添加文字8' },
-            { img: 'http://placehold.it/380?text=9', txtHeader: '添加文字9', txtContent: '添加文字9' }],
-            isActive: ''
+            p: [{ img: '/img/gallery/7.jpg', txtHeader: '添加文字7', txtContent: '添加文字7' },
+            { img: '/img/gallery/8.jpg', txtHeader: '添加文字8', txtContent: '添加文字8' },
+            { img: '/img/gallery/9.jpg', txtHeader: '添加文字9', txtContent: '添加文字9' }]
         },
         {
-            p: [{ img: 'http://placehold.it/380?text=10', txtHeader: '添加文字7', txtContent: '添加文字7' },
-            { img: 'http://placehold.it/380?text=11', txtHeader: '添加文字8', txtContent: '添加文字8' },
-            { img: 'http://placehold.it/380?text=12', txtHeader: '添加文字9', txtContent: '添加文字9' }],
-            isActive: ''
+            p: [{ img: '/img/gallery/10.jpg', txtHeader: '添加文字1', txtContent: '添加文字1' },
+            { img: '/img/gallery/11.jpg', txtHeader: '添加文字2', txtContent: '添加文字2' },
+            { img: '/img/gallery/12.jpg', txtHeader: '添加文字3', txtContent: '添加文字3' }]
+        },
+        {
+            p: [{ img: '/img/gallery/13.jpg', txtHeader: '添加文字4', txtContent: '添加文字4' },
+            { img: '/img/gallery/14.jpg', txtHeader: '添加文字5', txtContent: '添加文字5' },
+            { img: '/img/gallery/15.jpg', txtHeader: '添加文字6', txtContent: '添加文字6' }]
+        },
+        {
+            p: [{ img: '/img/gallery/16.jpg', txtHeader: '添加文字7', txtContent: '添加文字7' },
+            { img: '/img/gallery/17.jpg', txtHeader: '添加文字8', txtContent: '添加文字8' },
+            { img: '/img/gallery/18.jpg', txtHeader: '添加文字9', txtContent: '添加文字9' }]
         }
     ];
-
-
-
-    var template = document.getElementById('landscapeSketchHolder-template').innerHTML;
+    var template = document.getElementById('galleryHolder-template').innerHTML;
     var renderCarouselItems = Handlebars.compile(template);
-    
     // var html = renderCarouselItems();
     var html = renderCarouselItems({
-        landscapeSketchObjs: landscapeSketchObjs
+        galleryObjs: galleryObjs
     });
-    document.getElementById('landscapeSketchHolder').innerHTML = html;
-
-    var architecturalBeautyObjs = [
-        {
-            p: [{ img: 'http://placehold.it/380?text=1', txtHeader: '添加文字1', txtContent: '添加文字1' },
-            { img: 'http://placehold.it/380?text=2', txtHeader: '添加文字2', txtContent: '添加文字2' },
-            { img: 'http://placehold.it/380?text=3', txtHeader: '添加文字3', txtContent: '添加文字3' }],
-            isActive: 'active'
-        },
-        {
-            p: [{ img: 'http://placehold.it/380?text=4', txtHeader: '添加文字4', txtContent: '添加文字4' },
-            { img: 'http://placehold.it/380?text=5', txtHeader: '添加文字5', txtContent: '添加文字5' },
-            { img: 'http://placehold.it/380?text=6', txtHeader: '添加文字6', txtContent: '添加文字6' }],
-            isActive: ''
-        },
-        {
-            p: [{ img: 'http://placehold.it/380?text=7', txtHeader: '添加文字7', txtContent: '添加文字7' },
-            { img: 'http://placehold.it/380?text=8', txtHeader: '添加文字8', txtContent: '添加文字8' },
-            { img: 'http://placehold.it/380?text=9', txtHeader: '添加文字9', txtContent: '添加文字9' }],
-            isActive: ''
-        }
-    ];
+    document.getElementById('galleryHolder').innerHTML = html;
 
 
-
-    var template = document.getElementById('architecturalBeautyHolder-template').innerHTML;
-    var renderCarouselItems = Handlebars.compile(template);
+    /*    var landscapeSketchObjs = [
+            {
+                p: [{ img: 'http://placehold.it/380?text=1', txtHeader: '添加文字1', txtContent: '添加文字1' },
+                { img: 'http://placehold.it/380?text=2', txtHeader: '添加文字2', txtContent: '添加文字2' },
+                { img: 'http://placehold.it/380?text=3', txtHeader: '添加文字3', txtContent: '添加文字3' }]
+            },
+            {
+                p: [{ img: 'http://placehold.it/380?text=4', txtHeader: '添加文字4', txtContent: '添加文字4' },
+                { img: 'http://placehold.it/380?text=5', txtHeader: '添加文字5', txtContent: '添加文字5' },
+                { img: 'http://placehold.it/380?text=6', txtHeader: '添加文字6', txtContent: '添加文字6' }]
+            },
+            {
+                p: [{ img: 'http://placehold.it/380?text=7', txtHeader: '添加文字7', txtContent: '添加文字7' },
+                { img: 'http://placehold.it/380?text=8', txtHeader: '添加文字8', txtContent: '添加文字8' },
+                { img: 'http://placehold.it/380?text=9', txtHeader: '添加文字9', txtContent: '添加文字9' }]
+            },
+            {
+                p: [{ img: 'http://placehold.it/380?text=10', txtHeader: '添加文字7', txtContent: '添加文字7' },
+                { img: 'http://placehold.it/380?text=11', txtHeader: '添加文字8', txtContent: '添加文字8' },
+                { img: 'http://placehold.it/380?text=12', txtHeader: '添加文字9', txtContent: '添加文字9' }]
+            }
+        ];
+        var template = document.getElementById('landscapeSketchHolder-template').innerHTML;
+        var renderCarouselItems = Handlebars.compile(template);
+        // var html = renderCarouselItems();
+        var html = renderCarouselItems({
+            landscapeSketchObjs: landscapeSketchObjs
+        });
+        document.getElementById('landscapeSketchHolder').innerHTML = html;
     
-    // var html = renderCarouselItems();
-    var html = renderCarouselItems({
-        architecturalBeautyObjs: architecturalBeautyObjs
-    });
-    document.getElementById('architecturalBeautyHolder').innerHTML = html;
-
-    var interiorDesignObjs = [
-        {
-            p: [{ img: 'http://placehold.it/380?text=1', txtHeader: '添加文字1', txtContent: '添加文字1' },
-            { img: 'http://placehold.it/380?text=2', txtHeader: '添加文字2', txtContent: '添加文字2' },
-            { img: 'http://placehold.it/380?text=3', txtHeader: '添加文字3', txtContent: '添加文字3' }],
-            isActive: 'active'
-        },
-        {
-            p: [{ img: 'http://placehold.it/380?text=4', txtHeader: '添加文字4', txtContent: '添加文字4' },
-            { img: 'http://placehold.it/380?text=5', txtHeader: '添加文字5', txtContent: '添加文字5' },
-            { img: 'http://placehold.it/380?text=6', txtHeader: '添加文字6', txtContent: '添加文字6' }],
-            isActive: ''
-        },
-        {
-            p: [{ img: 'http://placehold.it/380?text=7', txtHeader: '添加文字7', txtContent: '添加文字7' },
-            { img: 'http://placehold.it/380?text=8', txtHeader: '添加文字8', txtContent: '添加文字8' },
-            { img: 'http://placehold.it/380?text=9', txtHeader: '添加文字9', txtContent: '添加文字9' }],
-            isActive: ''
-        }
-    ];
-
-
-
-    var template = document.getElementById('interiorDesignHolder-template').innerHTML;
-    var renderCarouselItems = Handlebars.compile(template);
     
-    // var html = renderCarouselItems();
-    var html = renderCarouselItems({
-        interiorDesignObjs: interiorDesignObjs
-    });
-    document.getElementById('interiorDesignHolder').innerHTML = html;
-
-    var lifestyleObjs = [
-        {
-            p: [{ img: 'http://placehold.it/380?text=1', txtHeader: '添加文字1', txtContent: '添加文字1' },
-            { img: 'http://placehold.it/380?text=2', txtHeader: '添加文字2', txtContent: '添加文字2' },
-            { img: 'http://placehold.it/380?text=3', txtHeader: '添加文字3', txtContent: '添加文字3' }],
-            isActive: 'active'
-        },
-        {
-            p: [{ img: 'http://placehold.it/380?text=4', txtHeader: '添加文字4', txtContent: '添加文字4' },
-            { img: 'http://placehold.it/380?text=5', txtHeader: '添加文字5', txtContent: '添加文字5' },
-            { img: 'http://placehold.it/380?text=6', txtHeader: '添加文字6', txtContent: '添加文字6' }],
-            isActive: ''
-        },
-        {
-            p: [{ img: 'http://placehold.it/380?text=7', txtHeader: '添加文字7', txtContent: '添加文字7' },
-            { img: 'http://placehold.it/380?text=8', txtHeader: '添加文字8', txtContent: '添加文字8' },
-            { img: 'http://placehold.it/380?text=9', txtHeader: '添加文字9', txtContent: '添加文字9' }],
-            isActive: ''
-        },
-        {
-            p: [{ img: 'http://placehold.it/380?text=10', txtHeader: '添加文字1', txtContent: '添加文字1' },
-            { img: 'http://placehold.it/380?text=11', txtHeader: '添加文字2', txtContent: '添加文字2' },
-            { img: 'http://placehold.it/380?text=12', txtHeader: '添加文字3', txtContent: '添加文字3' }],
-            isActive: 'active'
-        },
-        {
-            p: [{ img: 'http://placehold.it/380?text=13', txtHeader: '添加文字4', txtContent: '添加文字4' },
-            { img: 'http://placehold.it/380?text=14', txtHeader: '添加文字5', txtContent: '添加文字5' },
-            { img: 'http://placehold.it/380?text=15', txtHeader: '添加文字6', txtContent: '添加文字6' }],
-            isActive: ''
-        },
-        {
-            p: [{ img: 'http://placehold.it/380?text=16', txtHeader: '添加文字7', txtContent: '添加文字7' },
-            { img: 'http://placehold.it/380?text=17', txtHeader: '添加文字8', txtContent: '添加文字8' },
-            { img: 'http://placehold.it/380?text=18', txtHeader: '添加文字9', txtContent: '添加文字9' }],
-            isActive: ''
-        }
-    ];
-
-
-
-    var template = document.getElementById('lifestyleHolder-template').innerHTML;
-    var renderCarouselItems = Handlebars.compile(template);
+        var architecturalBeautyObjs = [
+            {
+                p: [{ img: 'http://placehold.it/380?text=1', txtHeader: '添加文字1', txtContent: '添加文字1' },
+                { img: 'http://placehold.it/380?text=2', txtHeader: '添加文字2', txtContent: '添加文字2' },
+                { img: 'http://placehold.it/380?text=3', txtHeader: '添加文字3', txtContent: '添加文字3' }]
+            },
+            {
+                p: [{ img: 'http://placehold.it/380?text=4', txtHeader: '添加文字4', txtContent: '添加文字4' },
+                { img: 'http://placehold.it/380?text=5', txtHeader: '添加文字5', txtContent: '添加文字5' },
+                { img: 'http://placehold.it/380?text=6', txtHeader: '添加文字6', txtContent: '添加文字6' }]
+            },
+            {
+                p: [{ img: 'http://placehold.it/380?text=7', txtHeader: '添加文字7', txtContent: '添加文字7' },
+                { img: 'http://placehold.it/380?text=8', txtHeader: '添加文字8', txtContent: '添加文字8' },
+                { img: 'http://placehold.it/380?text=9', txtHeader: '添加文字9', txtContent: '添加文字9' }]
+            }
+        ];
+        var template = document.getElementById('architecturalBeautyHolder-template').innerHTML;
+        var renderCarouselItems = Handlebars.compile(template);
+        // var html = renderCarouselItems();
+        var html = renderCarouselItems({
+            architecturalBeautyObjs: architecturalBeautyObjs
+        });
+        document.getElementById('architecturalBeautyHolder').innerHTML = html;
     
-    // var html = renderCarouselItems();
-    var html = renderCarouselItems({
-        lifestyleObjs: lifestyleObjs
-    });
-    document.getElementById('lifestyleHolder').innerHTML = html;
-
+    
+        var interiorDesignObjs = [
+            {
+                p: [{ img: 'http://placehold.it/380?text=1', txtHeader: '添加文字1', txtContent: '添加文字1' },
+                { img: 'http://placehold.it/380?text=2', txtHeader: '添加文字2', txtContent: '添加文字2' },
+                { img: 'http://placehold.it/380?text=3', txtHeader: '添加文字3', txtContent: '添加文字3' }]
+            },
+            {
+                p: [{ img: 'http://placehold.it/380?text=4', txtHeader: '添加文字4', txtContent: '添加文字4' },
+                { img: 'http://placehold.it/380?text=5', txtHeader: '添加文字5', txtContent: '添加文字5' },
+                { img: 'http://placehold.it/380?text=6', txtHeader: '添加文字6', txtContent: '添加文字6' }]
+            },
+            {
+                p: [{ img: 'http://placehold.it/380?text=7', txtHeader: '添加文字7', txtContent: '添加文字7' },
+                { img: 'http://placehold.it/380?text=8', txtHeader: '添加文字8', txtContent: '添加文字8' },
+                { img: 'http://placehold.it/380?text=9', txtHeader: '添加文字9', txtContent: '添加文字9' }]
+            }
+        ];
+        var template = document.getElementById('interiorDesignHolder-template').innerHTML;
+        var renderCarouselItems = Handlebars.compile(template);
+        // var html = renderCarouselItems();
+        var html = renderCarouselItems({
+            interiorDesignObjs: interiorDesignObjs
+        });
+        document.getElementById('interiorDesignHolder').innerHTML = html;
+    
+    
+        var lifestyleObjs = [
+            {
+                p: [{ img: 'http://placehold.it/380?text=1', txtHeader: '添加文字1', txtContent: '添加文字1' },
+                { img: 'http://placehold.it/380?text=2', txtHeader: '添加文字2', txtContent: '添加文字2' },
+                { img: 'http://placehold.it/380?text=3', txtHeader: '添加文字3', txtContent: '添加文字3' }]
+            },
+            {
+                p: [{ img: 'http://placehold.it/380?text=4', txtHeader: '添加文字4', txtContent: '添加文字4' },
+                { img: 'http://placehold.it/380?text=5', txtHeader: '添加文字5', txtContent: '添加文字5' },
+                { img: 'http://placehold.it/380?text=6', txtHeader: '添加文字6', txtContent: '添加文字6' }]
+            },
+            {
+                p: [{ img: 'http://placehold.it/380?text=7', txtHeader: '添加文字7', txtContent: '添加文字7' },
+                { img: 'http://placehold.it/380?text=8', txtHeader: '添加文字8', txtContent: '添加文字8' },
+                { img: 'http://placehold.it/380?text=9', txtHeader: '添加文字9', txtContent: '添加文字9' }]
+            },
+            {
+                p: [{ img: 'http://placehold.it/380?text=10', txtHeader: '添加文字1', txtContent: '添加文字1' },
+                { img: 'http://placehold.it/380?text=11', txtHeader: '添加文字2', txtContent: '添加文字2' },
+                { img: 'http://placehold.it/380?text=12', txtHeader: '添加文字3', txtContent: '添加文字3' }]
+            },
+            {
+                p: [{ img: 'http://placehold.it/380?text=13', txtHeader: '添加文字4', txtContent: '添加文字4' },
+                { img: 'http://placehold.it/380?text=14', txtHeader: '添加文字5', txtContent: '添加文字5' },
+                { img: 'http://placehold.it/380?text=15', txtHeader: '添加文字6', txtContent: '添加文字6' }]
+            },
+            {
+                p: [{ img: 'http://placehold.it/380?text=16', txtHeader: '添加文字7', txtContent: '添加文字7' },
+                { img: 'http://placehold.it/380?text=17', txtHeader: '添加文字8', txtContent: '添加文字8' },
+                { img: 'http://placehold.it/380?text=18', txtHeader: '添加文字9', txtContent: '添加文字9' }]
+            }
+        ];
+        var template = document.getElementById('lifestyleHolder-template').innerHTML;
+        var renderCarouselItems = Handlebars.compile(template);
+        // var html = renderCarouselItems();
+        var html = renderCarouselItems({
+            lifestyleObjs: lifestyleObjs
+        });
+        document.getElementById('lifestyleHolder').innerHTML = html;
+    */
 });

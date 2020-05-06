@@ -54,7 +54,10 @@ section#contact :-ms-input-placeholder {
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-#contactUsAddress,
+#contactUsAddress {
+    background-color: #007bff;
+}
+
 #mapSep {
     background-color: slategray;
 }
