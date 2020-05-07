@@ -200,6 +200,11 @@ $(document).ready(function ($) {
         }
     });
 
+    $(".videos").on("click", function(){
+        $('video', this).get(0).muted = !$('video', this).get(0).muted
+        $(this).find('.soundToggle').toggleClass('fa-volume-off fa-volume-up');
+    });
+
     // var promise = document.querySelector('video').play();
 
 
