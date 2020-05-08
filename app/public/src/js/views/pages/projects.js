@@ -1,4 +1,4 @@
-"use strict"; 
+"use strict";
 $(document).ready(function ($) {
     var houseLayoutObjs = [
         {
@@ -105,10 +105,29 @@ $(document).ready(function ($) {
         }
     ];
     var template = document.getElementById('amenitiesHolder-template').innerHTML;
-    var renderCarouselItems = Handlebars.compile(template); 
+    var renderCarouselItems = Handlebars.compile(template);
     // var html = renderCarouselItems();
     var html = renderCarouselItems({
         amenitiesObjs: amenitiesObjs
     });
     document.getElementById('amenitiesHolder').innerHTML = html;
+
+
+    // var $item = $('#homevid');
+    // var $wHeight = $(window).height();
+    // var $wWidth = $(window).width();
+
+    // $item.height($wHeight);
+    // $item.width($wWidth);
+    // $('#homevid video').height($wHeight);
+    // $('#homevid video').width($wWidth);
+
+    // $(window).on('resize', function () {
+    //     $wHeight = $(window).height();
+    //     $wWidth = $(window).width();
+    //     $item.height($wHeight);
+    //     $item.width($wWidth);
+    //     $('#homevid video').height($wHeight);
+    //     $('#homevid video').width($wWidth);
+    // });
 });
