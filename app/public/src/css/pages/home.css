@@ -7,6 +7,10 @@
     background-size: cover;
   } */
 
+.btn-primary {
+    margin-top: 500px;
+}
+
 .aligncenter {
     display: block;
     margin: 15px;
