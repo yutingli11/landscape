@@ -176,6 +176,9 @@ $(document).ready(function ($) {
     //     }
     // }
 
+    // $(".videos").each(function () {
+    //     $('video', this).get(0).load();
+    // });
 
 
     $(".videos").on({

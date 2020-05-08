@@ -5,9 +5,6 @@
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
 
 <div class="container">
     <div id="videosHolder"></div>
@@ -20,17 +17,17 @@
                         <div class="card border-0 shadow">
                             <div style="background-image:url(\{{bckground}});background-repeat:no-repeat;background-position:0px 1px;background-size: 350px;" 
                                  class="videos overlay embed-responsive embed-responsive-350by619">
-                                <video playsinline muted loop>
+                                <video playsinline muted loop preload="auto">
                                     <source src="\{{video}}" type="video/mp4">
                                 </video>
                                 <div>
                                     <button type="button" class="soundButton btn btn-primary btn-lg btn-block"><i class="soundToggle fa fa-volume-off"></i></button>
                                 </div>
                             </div>
-                            <div class="card-body text-center">
+                            {{!-- <div class="card-body text-center">
                                 <h5 class="card-title mb-0">\{{txtHeader}}</h5>
                                 <div class="card-text text-black-50">\{{txtContent}}</div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                  \{{/each}}

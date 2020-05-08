@@ -24,7 +24,7 @@ img {
 img.card-img-top {
     width: 100%;
     /* You can set the dimensions to whatever you want */
-    height: 200px;
+    height: 300px;
     object-fit: cover;
 }
 
