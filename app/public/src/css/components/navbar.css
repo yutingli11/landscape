@@ -31,7 +31,7 @@
 }
 
 #mainNav .nav-item.dropdown .navItemDropdown, #mainNav .navbar-nav .nav-item .nav-link {
-    font-size: 90%;
+    font-size: 85%;
     font-weight: 400;
     padding: 0.75em 0;
     letter-spacing: 1px;
@@ -69,7 +69,7 @@
     }
 }
 
-#socialBar {
+/* #socialBar {
     position: fixed;
     top: 100px;
     right: 0px;
@@ -137,7 +137,7 @@
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
-}
+} */
 
 
 /* Slide out social networking */
