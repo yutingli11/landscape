@@ -7,9 +7,9 @@
         "$1": "2 teaspoons olive oil",
         "$2": "salt and pepper"
     },
-    "home": "Home",
+    "home": "主页",
     "prejectInfoDropdown": {
-        "projectInfo": "Project Info",
-        "ourVideo": "Our video"
+        "projectInfo": "项目介绍",
+        "ourVideo": "主视频"
     }
 }

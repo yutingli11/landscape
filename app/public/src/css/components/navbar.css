@@ -2,8 +2,12 @@
     background-color: #212529;
 }
 
-#projectsDropdownMenu {
+#mainNav li.dropdownList .dropdown-menu {
     top: 96%;
+}
+
+#projectsDropdownUl {
+    width: 184px;
 }
 
 #mainNav .navbar-toggler {
@@ -26,7 +30,7 @@
     color: #007b5e;
 }
 
-#mainNav .nav-item.dropdown .selectedProjectsSubMenu, #mainNav .navbar-nav .nav-item .nav-link {
+#mainNav .nav-item.dropdown .navItemDropdown, #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 90%;
     font-weight: 400;
     padding: 0.75em 0;
@@ -35,7 +39,7 @@
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-#mainNav .nav-item.dropdown .selectedProjectsSubMenu:hover, #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+#mainNav .nav-item.dropdown .navItemDropdown:hover, #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: #007b5e;
 }
 

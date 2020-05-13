@@ -16,16 +16,16 @@
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="/home">主页</a>
                 </li>
-                <li id="projectsDropdown" class="nav-item dropdown">
-                    <div id="selectedProjectsDiv" class="nav-link">
-                        <a id="selectedProjectsLink" class="selectedProjectsSubMenu" href="/projects">项目介绍</a>
+                <li id="projectsDropdownListItem" class="nav-item dropdown dropdownList">
+                    <div id="projectsDropdownDiv" class="nav-link">
+                        <a id="selectedProjectsTxt" class="navItemDropdown" href="/projects">项目介绍</a>
 
                         <a id="projectsDropdownCaret" aria-expanded="false" aria-haspopup="true" role="button"
-                            data-toggle="dropdown" class="dropdown-toggle selectedProjectsSubMenu" href="#">
+                            data-toggle="dropdown" class="dropdown-toggle navItemDropdown" href="#">
                             {{!-- <span id="selected">项目介绍</span> --}}
                             <span class="caret"></span>
                         </a>
-                        <ul id="projectsDropdownMenu" class="dropdown-menu">
+                        <ul id="projectsDropdownUl" class="dropdown-menu">
                             <li><a class="js-scroll-trigger" href="/projects#homevid">主视频</a></li>
                             <li><a class="js-scroll-trigger" href="/projects#projectsInfo">项目信息</a></li>
                             <li><a class="js-scroll-trigger" href="/projects#houseLayout">标准户型</a></li>
@@ -50,7 +50,7 @@
                         <li><a class="js-scroll-trigger" href="/projects#projectLocation">项目位置</a></li>
                     </ul>
                 </li> --}}
-                
+
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="/gallery">画廊</a>
                 </li>
@@ -66,23 +66,33 @@
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="/contact">联系我们</a>
                 </li>
+                {{!-- <li id="languagesDropdownListItem" class="nav-item dropdown dropdownList">
+                    <div id="languagesDropdownDiv" class="nav-link">
+                        <a id="selectedLanguagesTxt" aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown"
+                            class="dropdown-toggle navItemDropdown" href="#">
+                            Language
+                        </a>
+                        <ul id="languagesDropdownUl" class="dropdown-menu">
+                            <li>
+                                <span class="flag-icon flag-icon-gb"></span>
+                                <a class="js-scroll-trigger" rel="en" href="">English</a>
+                            </li>
+                            <li>
+                                <span class="flag-icon flag-icon-de"></span>
+                                <a class="js-scroll-trigger" rel="de" href="">German</a>
+                            </li>
+                            <li>
+                                <span class="flag-icon flag-icon-es"></span>
+                                <a class="js-scroll-trigger" rel="es" href="">Spanish</a>
+                            </li>
+                            <li>
+                                <span class="flag-icon flag-icon-cn"></span>
+                                <a class="js-scroll-trigger" rel="cn" href="">Chinese</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li> --}}
             </ul>
-
-
-            {{!-- <ul class="navbar-nav text-uppercase">
-                        <li class="nav-item dropdown">
-                            <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown"
-                                class="dropdown-toggle" href="#">
-                                <span id="selected">Language</span>
-                                <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><span class="flag-icon flag-icon-gb"></span><a class="js-scroll-trigger"
-                                        href="#">English</a></li>
-                                <li><span class="flag-icon flag-icon-cn"></span><a class="js-scroll-trigger"
-                                        href="#">Chinese</a></li>
-                            </ul>
-                        </li>
-                    </ul> --}}
         </div>
 
         {{!-- <div id="socialBar"> --}}

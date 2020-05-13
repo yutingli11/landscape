@@ -3,9 +3,9 @@ $(document).ready(function ($) {
 
     var translator = new Translator({
         persist: false,
-        languages: ["de", "en", "es"],
+        languages: ["cn", "en"],
         defaultLanguage: "en",
-        detectLanguage: true,
+        detectLanguage: false,
         filesLocation: "/src/js/tools/i18n"
     });
 
@@ -26,20 +26,33 @@ $(document).ready(function ($) {
     //     $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
     // });
 
-    $('.dropdown-menu a').click(function () {
-        $('#selectedProjectsLink').text($(this).text());
+    $('#projectsDropdownUl.dropdown-menu a').click(function () {
+        $('#selectedProjectsTxt').text($(this).text());
     });
 
-    $('#projectsDropdown').mouseenter(function () {
-        $("#projectsDropdownMenu").addClass("show");
-        $("#selectedProjectsDiv").addClass("show");
+    $('#languagesDropdownUl.dropdown-menu a').click(function (e) {
+        $('#selectedLanguagesTxt').text($(this).text());
+        e.preventDefault();
+        translator.load($(this).attr('rel'));
+    });
+
+    $('#projectsDropdownListItem').mouseenter(function () {
+        $("#projectsDropdownUl").addClass("show");
+        $("#projectsDropdownDiv").addClass("show");
         // $("#projectsDropdownCaret").css("aria-expanded", "true");
 
     });
+    $('#languagesDropdownListItem').mouseenter(function () {
+        $("#languagesDropdownUl").addClass("show");
+        $("#languagesDropdownDiv").addClass("show");
+    });
 
-    $('#projectsDropdown').mouseleave(function () {
-        $("#projectsDropdown").find(".show").removeClass('show');
+    $('#projectsDropdownListItem').mouseleave(function () {
+        $("#projectsDropdownListItem").find(".show").removeClass('show');
         // $("#projectsDropdownCaret").css("aria-expanded", "false");
+    });
+    $('#languagesDropdownListItem').mouseleave(function () {
+        $("#languagesDropdownListItem").find(".show").removeClass('show');
     });
 
 
